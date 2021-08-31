@@ -17,13 +17,18 @@ header {
     margin-top: 50px;
     margin-bottom: 50px;
 }
+header img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
 
 .container {
     display: flex;
     flex-direction: row;
     background-color:hsl(0, 0%, 100%);
     border-radius: 20px;
-    width: 70%;
+    width: 65%;
     height: 45%;
     left: 0;
     right: 0;
@@ -156,4 +161,5 @@ button:active {
     }
     .input_rectangle {width: 95%;}
     .reset {bottom: 0;}
+    .result{font-size: 30px;}
 }
