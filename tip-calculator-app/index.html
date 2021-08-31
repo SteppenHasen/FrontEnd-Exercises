@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <script src="script.js"></script>
+  
+  <title>Tip calculator app</title>
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/images/logo.svg">
+  </header>
+
+  <div class="container">
+    <div class="input-side">
+      <p>Bill</p>
+      <div class="input_rectangle">
+        <img src="/images/icon-dollar.svg">
+        <input type="text" placeholder="0" id="bill" type="text">
+      </div>
+      <p>Select Tip %</p>
+      <div class="buttons">
+        <button type="button" value="5" id="tip_button">5%</button>
+        <button type="button" value="10" id="tip_button">10%</button>
+        <button type="button" value="15" id="tip_button">15%</button>
+        <button type="button" value="25" id="tip_button">25%</button>
+        <button type="button" value="50" id="tip_button">50%</button>
+        <input type="text" class="custom_input" placeholder="Custom" id="input_tip" type="text">
+      </div>
+      <p>Number of People</p>
+      <div class="input_rectangle">
+        <img src="/images/icon-person.svg">
+        <input type="text" placeholder="5" id="n_people">
+      </div>
+    </div>
+
+    <div class="result-side">
+      <div class="row">
+        <div class="text">
+          <h6>Tip Amount</h6>
+          <p>/ person</p>
+        </div>
+        <div class="result">
+          &#36;<span id="tip">0.00</span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="text">
+          <h6>Total</h6>
+          <p>/ person</p>
+        </div>
+        <div class="result">
+          &#36;<span id="total">0.00</span>
+        </div>
+      </div>
+
+      <button type="reset" class="reset" id="reset">Reset</button>
+    </div>
+
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">SteppenHasen</a>.
+  </div>
+</body>
+</html>
