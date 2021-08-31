@@ -23,7 +23,7 @@ header {
     flex-direction: row;
     background-color:hsl(0, 0%, 100%);
     border-radius: 20px;
-    width: 60%;
+    width: 70%;
     height: 45%;
     left: 0;
     right: 0;
@@ -83,7 +83,8 @@ p {
     font-family: 'Space Mono', monospace;
     font-weight: 700;
     font-size: 18px;
-    height: 1.5em;   
+    height: 1.5em;  
+    transition: background 9999999s;
 }
 .buttons input {
     position: relative;
@@ -131,6 +132,17 @@ h6 {color: white;}
 }
 
 button:hover {background-color: hsl(183, 89%, 21%)}
+button:active {
+    background: rgb(84, 201, 185);
+    color: hsl(183, 100%, 15%);
+    transition: background 0s;
+  }
+
+#bill_alert, #tip_alert, #humans_alert {
+    color: rgb(148, 17, 17); 
+    font-size: 0.7rem;
+    font-weight: bold;
+}
 
 @media (max-width: 800px) {
     .container {

@@ -9,8 +9,6 @@
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
-
-  <script src="script.js"></script>
   
   <title>Tip calculator app</title>
 
@@ -24,23 +22,23 @@
     <img src="/images/logo.svg">
   </header>
 
-  <div class="container">
+  <form class="container">
     <div class="input-side">
-      <p>Bill</p>
+      <p>Bill<span id="bill_alert"></span></p> 
       <div class="input_rectangle">
         <img src="/images/icon-dollar.svg">
         <input type="text" placeholder="0" id="bill" type="text">
       </div>
-      <p>Select Tip %</p>
+      <p>Select Tip %<span id="tip_alert"></span></p>
       <div class="buttons">
-        <button type="button" value="5" id="tip_button">5%</button>
-        <button type="button" value="10" id="tip_button">10%</button>
-        <button type="button" value="15" id="tip_button">15%</button>
-        <button type="button" value="25" id="tip_button">25%</button>
-        <button type="button" value="50" id="tip_button">50%</button>
+        <button class="btn" type="button" value="5" id="tip_button" onclick="func(this.value)">5%</button>
+        <button class="btn" type="button" value="10" id="tip_button" onclick="func(this.value)">10%</button>
+        <button class="btn" type="button" value="15" id="tip_button" onclick="func(this.value)">15%</button>
+        <button class="btn" type="button" value="25" id="tip_button" onclick="func(this.value)">25%</button>
+        <button class="btn" type="button" value="50" id="tip_button" onclick="func(this.value)">50%</button>
         <input type="text" class="custom_input" placeholder="Custom" id="input_tip" type="text">
       </div>
-      <p>Number of People</p>
+      <p>Number of People<span id="humans_alert"></span></p>
       <div class="input_rectangle">
         <img src="/images/icon-person.svg">
         <input type="text" placeholder="5" id="n_people">
@@ -67,14 +65,16 @@
         </div>
       </div>
 
-      <button type="reset" class="reset" id="reset">Reset</button>
+      <button type="reset" class="reset" value="Reset" id="reset" disabled>Reset</button>
     </div>
 
-  </div>
+  </form>
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">SteppenHasen</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
