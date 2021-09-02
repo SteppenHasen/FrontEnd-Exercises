@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,14 +23,22 @@
 </head>
 <body>
   <header>
-    <nav class="navigation-bar">
+    <nav class="navigation-bar" id="nav">
       <img src="images/logo.svg" class="logo">
-      <ul>
-        <li>About</li>
-        <li>Services</li>
-        <li>Projects</li>
-        <li>Contact</li>
-      </ul>
+      <div>
+        <a class="main_menu" href="">About</a>
+        <a class="main_menu" href="">Services</a>
+        <a class="main_menu" href="">Projects</a>
+        <a class="main_menu" href="">Contact</a>
+        <div class="dropdown"><i class="fa fa-bars"></i>
+          <div class="dropdown-content">
+            <a href="">About</a>
+            <a href="">Services</a>
+            <a href="">Projects</a>
+            <a href="">Contact</a>
+          </div>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -64,8 +73,8 @@
         <p>Increase your credibility by getting the most stunning, high-quality photos that improve your business image.</p>
       </article>
     </section>
+    <h3>Client testimonials</h3>
     <section class="clients_comments">
-      <h3>Client testimonials</h3>
       <article>
         <img src="images/image-emily.jpg">
         <p class="comment">We put our trust in Sunnyside and they delivered, making sure our needs were met and deadlines were always hit.</p>
