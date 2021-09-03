@@ -22,7 +22,7 @@ nav {
   display: flex;
   flex-direction: column;
 }
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     .clients_comments {
       display: flex;
       flex-direction: column;
@@ -41,16 +41,10 @@ nav {
   grid-template-columns: 25% 25% 25% 25%;
   grid-gap: 0;
 }
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     .cards {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(100vw, 1fr));
-    }
-  }
-  @media (max-width: 375px) {
-    .floor_imgs {
-      display: grid;
-      grid-template-columns: 50% 50% !important;
     }
   }
 
@@ -83,10 +77,11 @@ nav, footer {
 .navigation-bar .main_menu {
   float: left;
   display: block;
-  padding: 14px 16px;
+  padding-right: 2vw;
   text-align: center;
   color: white;
   text-decoration: none;
+  font-size: 3vh;
 }
 
 .navigation-bar .dropdown {
@@ -99,7 +94,7 @@ nav, footer {
   right: 3vw;
   background-color: #f9f9f9;
   min-width: 160px;
-  z-index: 1;
+  z-index: 999999;
 }
 .dropdown-content a {
   color: hsl(232, 10%, 55%);
@@ -113,7 +108,7 @@ nav, footer {
   border-radius: 25px;
 }
 
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     .navigation-bar .main_menu {display: none;}
     .navigation-bar .dropdown {
       float: right;
@@ -164,7 +159,7 @@ nav, footer {
   justify-content: flex-end;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 550px) {
   .cards article {
     width: 100%;
     height: 110vw;
@@ -208,10 +203,16 @@ article a {
   padding: 1.5vw 12vw 1.5vw 12vw;
   margin: 0;
 }
-  @media (max-width: 375px) {
+
+  @media (max-width: 950px) {
+    .cards p {
+      padding: 0 10vw 0 10vw;
+    }
     h4 {font-size: 30px;}
     p {font-size: 14px;}
-    .five p, .six p {margin-bottom: 5px;}
+  }
+  @media (max-width: 550px) {
+    .five p, .six p {margin-bottom: 20px;}
   }
 /* Cards bg img */
 .two {
@@ -238,7 +239,7 @@ article a {
   background: url('images/desktop/image-photography.jpg') center #3ebfff no-repeat;
   background-size: cover;
 }
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     .five, .six {background-size: 150%;}
   }
 
@@ -276,7 +277,7 @@ h3 {
   font-family: 'Barlow', sans-serif;
   font-size: 14px;
 }
-  @media (max-width: 375px) {
+  @media (max-width: 550px) {
     h3 {
       padding-left: 10px;
       padding-right: 10px;
@@ -287,3 +288,10 @@ h3 {
   }
 /* Floor ---------------------------- */
 .floor_imgs img {width: 100%; height: auto;}
+
+@media (max-width: 550px) {
+  .floor_imgs {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+}
