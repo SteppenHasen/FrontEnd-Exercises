@@ -77,11 +77,16 @@ nav, footer {
 .navigation-bar .main_menu {
   float: left;
   display: block;
-  padding-right: 2vw;
+  padding: 0.5vw 1vw 0.5vw 1vw;
   text-align: center;
   color: white;
   text-decoration: none;
   font-size: 3vh;
+}
+
+.main_menu:hover {
+  background-color: #74ccf8;
+  border-radius: 20px;
 }
 
 .navigation-bar .dropdown {
@@ -190,9 +195,12 @@ article a {
   color: hsl(212, 27%, 19%);
   font-size: 24px;
   padding-left: 10vw;
+  position: relative;
+  width: max-content;
 }
+
 .five h4, .five p {
-  color: hsl(211, 22%, 35%);
+  color: #3f7867;
   text-align: center;
   padding: 1.5vw 12vw 1.5vw 12vw;
   margin: 0;
@@ -214,30 +222,70 @@ article a {
   @media (max-width: 550px) {
     .five p, .six p {margin-bottom: 20px;}
   }
+
+  .one a::after { 
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 10px;
+    width: 0;
+    background: #fed201;
+    border-radius: 5px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    z-index: -1;
+  }
+  
+
+  .four a::after { 
+    content: "";
+    position: absolute;
+    bottom: 2px;
+    left: 50%;
+    display: block;
+    background: none repeat scroll 0 0 transparent;
+    height: 10px;
+    width: 0;
+    background: #fe7563;
+    border-radius: 5px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    z-index: -1;
+  }
+  
+  article a:hover::after { 
+    width: 65%;
+    left: 10vw; 
+  }
 /* Cards bg img */
 .two {
   overflow: hidden;
   position: relative;
   background: url('images/desktop/image-transform.jpg') center #3ebfff no-repeat;
   background-size: cover;
+  background-color: #fed201;
 }
 .three {
   overflow: hidden;
   position: relative;
   background: url('images/desktop/image-stand-out.jpg') center #3ebfff no-repeat;
   background-size: cover;
+  background-color: #fe7563;
 }
 .five {
   overflow: hidden;
   position: relative;
   background: url('images/desktop/image-graphic-design.jpg') center #3ebfff no-repeat;
   background-size: cover;
+  background-color: #8bd2c2;
 }
 .six {
   overflow: hidden;
   position: relative;
   background: url('images/desktop/image-photography.jpg') center #3ebfff no-repeat;
   background-size: cover;
+  background-color: #5ccffe;
 }
   @media (max-width: 550px) {
     .five, .six {background-size: 150%;}
@@ -293,5 +341,55 @@ h3 {
   .floor_imgs {
     display: grid;
     grid-template-columns: 50% 50%;
+  }
+}
+
+/* Footer ---------------------------- */
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #8bd2c2;
+  align-items: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer_logo {
+  margin-bottom: 50px;
+}
+.links {
+  margin-bottom: 80px;
+}
+.links a {
+  color: #3f7867;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-decoration: none;
+  text-align: center;
+}
+.socials {
+  margin-bottom: 50px;
+}
+.socials img {
+  padding-right: 10px;
+  padding-left: 10px;
+  fill: #2c6957;
+}
+.attribution {
+  color: #3f7867;
+  font-size: 14px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: #2c6957;
+}
+
+.links a:hover {color: white;}
+
+@media (max-width: 320px) {
+  .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
