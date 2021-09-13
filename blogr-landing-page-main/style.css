@@ -1,0 +1,121 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* General ------------------------------- */
+body {
+    background-color: #fafafa;
+    margin: 0;
+
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    /* font-family: 'Overpass', sans-serif; */
+}
+
+/* Flex styles --------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+.menu {
+    display: flex;
+}
+main {
+    display: flex;
+    flex-direction: column;
+}
+article {
+    display: flex;
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+}
+.footer_list {
+    display: flex;
+    flex-direction: column;
+}
+.titling {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Header styling */
+header {
+    height: 100vh;
+    width: 100vw;
+    background-image:    url(./images/bg-pattern-intro.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-size: auto;                      
+    background-repeat: no-repeat;
+    background-position: 20% 53%;
+}
+nav {
+    padding: 3vw 10vw 0vw 10vw;
+}
+.buttons button {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 16px 5px 16px 5px;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;   
+    width: 130px;
+}
+.titling {
+    color: hsl(0, 0%, 100%);
+    padding-top: 10%;
+}
+.titling h1 {
+    font-size: 4rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+}
+.buttons button:active {
+    background-color: rgba(255, 255, 255, 1);
+    color: hsl(353, 100%, 62%);
+    font-weight: 700;
+}
+/* Dropdawn------------------------------------- */
+.dropbtn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 25px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    background-color: #fffbff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 7px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {font-weight: 500;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {text-decoration: underline;}
