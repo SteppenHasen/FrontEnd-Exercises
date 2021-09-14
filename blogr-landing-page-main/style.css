@@ -45,10 +45,11 @@ footer {
 header {
     height: 100vh;
     width: 100vw;
-    background-image:    url(./images/bg-pattern-intro.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-image: url(./images/bg-pattern-intro.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: auto;                      
     background-repeat: no-repeat;
     background-position: 20% 53%;
+    border-radius: 0 0 0 150px;
 }
 nav {
     padding: 3vw 10vw 0vw 10vw;
@@ -71,6 +72,7 @@ nav {
     font-size: 4rem;
     font-weight: 400;
     margin-bottom: 1rem;
+    font-family: 'Overpass', sans-serif;
 }
 
 .buttons button:hover {
@@ -119,3 +121,64 @@ nav {
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {text-decoration: underline;}
+
+/* Main section stiling -------------------------- */
+main {
+    color: hsl(207, 13%, 34%);
+    padding-top: 6vw;
+}
+.no-background {padding-left: 10vw; padding-right: 10vw;}
+h2 {
+    font-size: 36px;
+    text-align: center;
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+}
+h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: hsl(208, 49%, 24%);
+    font-family: 'Overpass', sans-serif;
+}
+.image {
+    width: 50%;
+}
+.text {
+    width: 50%;
+    justify-content: flex-start;
+    display: flex;
+    flex-direction: column;
+}
+.dark .text {justify-content: center;}
+.dark {
+    color: #fafafa;
+    background-image: url(./images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+    background-size: auto;                      
+    background-repeat: no-repeat;
+    background-position: -43% 120%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    border-radius: 0 150px;
+}
+.dark h2 {color: #fafafa; text-align: left;}
+.image img { 
+    height: auto;
+    position: relative;
+    overflow: hidden;
+}
+.right {
+    width: 155%;
+    top: -22%;
+    right: -15%;
+}
+.left {
+    width: 175%;
+    top: -10%;
+    left: -75%;
+}
+.left-dark {
+    width: 100%;
+    top: 0%;
+    left: -15%;
+}
+
