@@ -26,6 +26,9 @@ main {
 article {
     display: flex;
 }
+.dark {flex-direction: column; justify-content: center;}
+.dark-background {display: flex; flex-direction: row;}
+.background-editor {flex-direction: column;}
 footer {
     display: flex;
     justify-content: space-around;
@@ -44,7 +47,6 @@ footer {
 /* Header styling */
 header {
     height: 100vh;
-    width: 100vw;
     background-image: url(./images/bg-pattern-intro.svg), linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
     background-size: auto;                      
     background-repeat: no-repeat;
@@ -127,7 +129,19 @@ main {
     color: hsl(207, 13%, 34%);
     padding-top: 6vw;
 }
-.no-background {padding-left: 10vw; padding-right: 10vw;}
+.background-editor {
+    padding-left: 10vw; 
+    padding-right: 10vw;
+    padding-bottom: 10vw;
+    background-image: url(./images/illustration-editor-desktop.svg);
+    background-size: 50%;                      
+    background-repeat: no-repeat;
+    background-position: 127% 100%;
+}
+.background-editor h2 {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
 h2 {
     font-size: 36px;
     text-align: center;
@@ -150,36 +164,39 @@ h3 {
     flex-direction: column;
 }
 .dark .text {justify-content: center;}
-.dark {
+.dark-background {
+    height: 50vh;
     color: #fafafa;
     background-image: url(./images/bg-pattern-circles.svg), linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
     background-size: auto;                      
     background-repeat: no-repeat;
-    background-position: -43% 120%;
+    background-position: -50% 86%;
     padding-left: 10vw;
     padding-right: 10vw;
     border-radius: 0 150px;
+    z-index: -1;
+}
+.dark {
+    height: 70vh;
+    color: #fafafa;
+    background-image: url(./images/illustration-phones.svg);
+    background-size: 35%;                      
+    background-repeat: no-repeat;
+    background-position: 10% 0%;
+
 }
 .dark h2 {color: #fafafa; text-align: left;}
-.image img { 
-    height: auto;
-    position: relative;
-    overflow: hidden;
-}
-.right {
-    width: 155%;
-    top: -22%;
-    right: -15%;
-}
-.left {
-    width: 175%;
-    top: -10%;
-    left: -75%;
-}
 .left-dark {
     width: 100%;
     top: 0%;
     left: -15%;
+}
+.laptop-background {
+    padding: 10vw;
+    background-image: url(./images/illustration-laptop-desktop.svg);
+    background-size: 60%;                      
+    background-repeat: no-repeat;
+    background-position: -40% 100%;
 }
 
 /* Background ---------------------------------- */
