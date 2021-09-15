@@ -156,7 +156,6 @@ nav {
     border: 0;
     float: inherit;
 }
-.togglebtn:active::after {color: hsl(207, 13%, 34%);}
 
 .toggle-content {
     padding-top: 10px;

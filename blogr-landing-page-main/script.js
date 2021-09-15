@@ -2,13 +2,14 @@ var dropdown = document.getElementsByClassName("togglebtn");
 var i;
 
 for (i = 0; i < dropdown.length; i++) {
-  dropdown[i].addEventListener("click", function() {
-    var dropdownContent = this.nextElementSibling;
-    if (dropdownContent.style.display === "block") {
-      dropdownContent.style.display = "none";
-    } else {
-      dropdownContent.style.display = "block";
-    }
+    dropdown[i].addEventListener("click", function() {
+        var dropdownContentBlock = document.getElementsByClassName("toggle-content");
+        j = 0
+        for (j = 0; j < dropdownContentBlock.length; j++) {
+            dropdownContentBlock[j].style.display = "none";
+        }
+        var dropdownContent = this.nextElementSibling;
+        dropdownContent.style.display = "block";
   });
 }
 
