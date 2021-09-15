@@ -156,6 +156,8 @@ nav {
     border: 0;
     float: inherit;
 }
+.img_up {transform: scale(-1, 1)}
+.img_down {transform: none}
 
 .toggle-content {
     padding-top: 10px;
