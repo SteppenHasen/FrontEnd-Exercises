@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
-  
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -59,11 +59,12 @@
         <button>Sign Up</button>
       </div>
 
-      <div class="dropdown_mobile"><i class="fa fa-bars"></i>
-        <div class="content_mobile">
-          <div class="dropdown">
-            <button class="dropbtn">Product <i class="icon_arrow"><img src="./images/icon-arrow-light.svg" alt="icon"></i></button>
-            <div class="dropdown-content">
+      <div class="toggle_mobile">
+        <img src="./images/icon-hamburger.svg" alt="menu_button" onclick="hover(this);">
+        <div class="content_mobile" id="content_mobile">
+          <div class="toggle">
+            <button class="togglebtn">Product <i class="icon_arrow"><img src="./images/icon-arrow-dark.svg" alt="icon"></i></button>
+            <div class="toggle-content">
               <a href="####">Overview</a>
               <a href="####">Pricing</a>
               <a href="####">Marketplace</a>
@@ -71,28 +72,28 @@
               <a href="####">Integrations</a>
             </div>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Company <i class="icon_arrow"><img src="./images/icon-arrow-light.svg" alt="icon"></i></button>
-            <div class="dropdown-content">
+          <div class="toggle">
+            <button class="togglebtn">Company <i class="icon_arrow"><img src="./images/icon-arrow-dark.svg" alt="icon"></i></button>
+            <div class="toggle-content">
               <a href="####">About</a>
               <a href="####">Team</a>
               <a href="####">Blog</a>
               <a href="####">Careers</a>
             </div>
           </div>
-          <div class="dropdown">
-            <button class="dropbtn">Connect <i class="icon_arrow"><img src="./images/icon-arrow-light.svg" alt="icon"></i></button>
-            <div class="dropdown-content">
+          <div class="toggle">
+            <button class="togglebtn">Connect <i class="icon_arrow"><img src="./images/icon-arrow-dark.svg" alt="icon"></i></button>
+            <div class="toggle-content">
               <a href="####">Contact</a>
               <a href="####">Newsletter</a>
               <a href="####">LinkedIn</a>
             </div>
           </div>
-          <hr>
-          <div class="buttons_mobile">
-            <button>Login</button>
-            <button>Sign Up</button>
-          </div>
+          
+          <div class="line"></div>
+
+          <button class="logbtn">Login</button>
+          <button class="logbtn">Sign Up</button>
         </div>
       </div>
     </nav>
@@ -200,5 +201,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

@@ -124,15 +124,83 @@ nav {
     display: block;
 }
 
-.content_mobile {
-    display: none;
-}
-
 .dropdown-content a:hover {font-weight: 500;}
 
 .dropdown:hover .dropdown-content {display: block;}
 
 .dropdown:hover .dropbtn {text-decoration: underline;}
+
+/* Mobile menu ----------------------------------- */
+.content_mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: #fafafa;
+    width: auto;
+    height: 80vh;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    justify-content: center;
+    position: absolute;
+    right: 10vw;
+    left: 10vw;
+    padding: 10px;
+    margin-top: 10px;
+}
+.togglebtn {
+    color: hsl(208, 49%, 24%);
+    padding-top: 16px;
+    font-size: 16px;
+    font-weight: 700;
+    background: none;
+    border: 0;
+    float: inherit;
+}
+.togglebtn:active::after {color: hsl(207, 13%, 34%);}
+
+.toggle-content {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    display: none;
+    align-items: center;
+    background-color: hsl(240, 2%, 79%);
+    width: 60vw;
+    border-radius: 5px;
+    text-align: center;
+}
+.toggle-content a {
+    color: hsl(207, 13%, 34%);
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.toggle-content a:hover {color: hsl(208, 49%, 24%); text-decoration: underline;}
+
+.line {
+    margin-top:20px;
+    border-top:2px solid hsl(240, 2%, 79%);
+    height:10px;
+    width: 60vw;
+}
+.content_mobile .logbtn {
+    background: none;
+    padding: 16px 5px 16px 5px;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 25px;   
+    width: 50vw;
+    color: hsl(208, 49%, 24%);
+}
+.content_mobile .logbtn:hover {
+    color: #fafafa;
+    background: linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+}
+.toggle_mobile {display: none;}
 
 /* Main section stiling -------------------------- */
 main {
@@ -309,7 +377,7 @@ footer a:hover {
 }
 
 @media (max-width:900px) {
-    .dropdown_mobile {
+    .toggle_mobile {
         display: block;
         color: #fafafa;
         font-size: 2rem;
@@ -319,7 +387,15 @@ footer a:hover {
     .menu {display: none;}
     nav .buttons {display: none;}
 
-    .dropdown_mobile:hover .content_mobile {
-      display: block;
+    /* .toggle_mobile:hover .content_mobile {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+
+    .toggle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 }
