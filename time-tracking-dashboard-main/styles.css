@@ -1,0 +1,182 @@
+/* Grid styling----------------------------- */
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 15vw);
+    grid-gap: 20px;
+    grid-auto-rows: 15vw;
+}
+.report {
+    grid-column: 1;
+    grid-row: 1/3;
+}
+.work {
+    grid-column: 2;
+    grid-row: 1;
+}
+.play {
+    grid-column: 3;
+    grid-row: 1;
+}
+.study {
+    grid-column: 4;
+    grid-row: 1;
+}
+.exercise {
+    grid-column: 2;
+    grid-row: 2;
+}
+.social {
+    grid-column: 3;
+    grid-row: 2;
+}
+.self_care {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+/* Flex styling--------------------------------- */
+.set_period {
+    display: flex;
+    flex-direction: column;
+}
+.title {
+    display: inline-flex;
+    justify-content: space-between;
+}
+.report {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.area_info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* General-------------------------------------- */
+body {
+    background: hsl(226, 43%, 10%);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fafafa;
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); text-decoration: none;}
+
+.container {
+    width: 61vw;
+    margin: 15vh auto;
+}
+
+.report {
+    background: hsl(235, 46%, 20%);
+    border-radius: 15px;
+}
+.person {
+    height: 65%;
+    background: hsl(246, 80%, 60%);
+    border-radius: 15px;
+    position: relative;
+    top: 0;
+    padding-left: 25px;
+    padding-top: 25px;
+}
+img {
+    width: 40%;
+    border: 3px solid #fafafa;
+    border-radius: 50%;
+    margin: 10px 0 10px 0;
+}
+p {font-size: 14px; font-weight: 300;}
+h1 {font-weight: 300; margin: 0;}
+
+
+.set_period {
+    align-items: flex-start;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+button {
+    border: 0;
+    background: none;
+    color: hsl(235, 45%, 61%);
+    font-size: 16px;
+    padding-top: 15px;
+}
+button:hover {color: #fafafa;}
+
+.area_info {
+    height: 12vw;
+    background: hsl(235, 46%, 20%);
+    border: 1px solid hsl(235, 46%, 20%);
+    border-radius: 15px;
+    position: relative;
+    bottom: -20%;
+}
+.title {
+    padding: 0 25px;
+}
+.today_time {
+    padding: 25px 25px 0 25px;
+}
+.previous_time{
+    padding: 0 25px;
+}
+h2 {
+    font-weight: 500; 
+    font-size: 18px;
+    margin: 0;
+}
+h3 {
+    margin: 0;
+    font-weight: 300;
+    font-size: 40px;
+}
+.previous_time p {font-size: 12px; color: hsl(235, 45%, 61%);}
+
+/* Spesial background styling---------------------------------- */
+.work {
+    background-color: hsl(15, 100%, 70%);
+    background-image: url(./images/icon-work.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url(./images/icon-play.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url(./images/icon-study.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url(./images/icon-exercise.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url(./images/icon-social.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
+.self_care {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url(./images/icon-self-care.svg);
+    border-radius: 15px;
+    background-repeat: no-repeat;
+    background-position: top right;
+}
