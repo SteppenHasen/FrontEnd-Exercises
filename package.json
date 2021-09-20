@@ -1,0 +1,25 @@
+{
+  "name": "frontend_mentor_exercises",
+  "version": "1.0.0",
+  "description": "project for all challenges",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SteppenHasen/FrontEnd-Exercises.git"
+  },
+  "author": "SteppenHasen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SteppenHasen/FrontEnd-Exercises/issues"
+  },
+  "homepage": "https://github.com/SteppenHasen/FrontEnd-Exercises#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "http-server": "^13.0.2",
+    "xmlhttprequest": "^1.8.0"
+  }
+}

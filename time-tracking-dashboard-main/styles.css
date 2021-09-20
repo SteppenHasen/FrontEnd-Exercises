@@ -87,6 +87,7 @@ body {
 img {
     width: 40%;
     border: 3px solid #fafafa;
+    background-color: #fafafa;
     border-radius: 50%;
     margin: 10px 0 10px 0;
 }
@@ -120,7 +121,7 @@ button:hover {color: #fafafa;}
     padding: 0 25px;
 }
 .today_time {
-    padding: 25px 25px 0 25px;
+    padding: 1vw 25px 0 25px;
 }
 .previous_time{
     padding: 0 25px;
@@ -179,4 +180,9 @@ h3 {
     border-radius: 15px;
     background-repeat: no-repeat;
     background-position: top right;
+}
+
+/* Adaptive styles-------------------------- */
+@media (max-width: 900px) {
+
 }
