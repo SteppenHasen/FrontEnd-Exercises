@@ -1,26 +1,7 @@
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const URL = 'https://steppenhasen.github.io/FrontEnd-Exercises/time-tracking-dashboard-main/data.json'
 
-var DATA;
+data = $.getJSON(URL, function(data) {
+    return data
+});
 
-function getFile (fileName) {
-
-    var request = new XMLHttpRequest();
-
-    request.open('GET', fileName);
-
-    request.onloadend = function() {
-
-        parse(request.responseText);
-    }
-
-    request.send();
-}
-
-getFile('./data.json'); //путь к файлу
-
-function parse(obj) {
-
-    DATA = JSON.parse(obj);
-
-    console.log(DATA);
-}
+console.log(data)
