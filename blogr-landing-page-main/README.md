@@ -25,7 +25,7 @@ Users should be able to:
 ### Screenshot
 
 ![](./screen.png)
-![](./mobile.png)
+![mobile](https://raw.githubusercontent.com/SteppenHasen/FrontEnd-Exercises/main/blogr-landing-page-main/mobile.png)
 
 ### Links
 
