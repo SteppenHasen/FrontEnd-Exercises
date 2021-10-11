@@ -15,12 +15,12 @@ Users should be able to:
 
 ### Screenshot
 
-[](./tip-calculator-app/screencapture-mobile.png)
-[](./tip-calculator-app/screencapture.png)
+[mobile](./tip-calculator-app/screencapture-mobile.png)
+[descktop](./tip-calculator-app/screencapture.png)
 
 ### Links
 
-- Live Site URL: [](https://steppenhasen.github.io/FrontEnd-Exercises/tip-calculator-app/index.html)
+- Live Site URL: [Live Site URL](https://steppenhasen.github.io/FrontEnd-Exercises/tip-calculator-app/index.html)
 
 ## My process
 
@@ -47,6 +47,4 @@ I learned how to work with inputs and eventListeners
 
 ## Author
 
-- Website - [](https://unsplash.com/@corpease)
-- Frontend Mentor - [](https://www.frontendmentor.io/profile/SteppenHasen)
-- Twitter - [](https://twitter.com/steppen_hasen)
+- Frontend Mentor - [@SteppenHasen](https://www.frontendmentor.io/profile/SteppenHasen)

@@ -30,7 +30,7 @@ function addElement(a, objData, bg_style_dict=background_dict) {
         let previous_time = objData[i]["timeframes"][a]["previous"]
         let info_box = document.createElement("div")
         info_box.className = "area_info"
-        info_box.innerHTML ="<h2>"+objData[i]["title"]+"</h2>\n<h3 id='today_time_work'>"+current_time+"hrs</h3>\n<p id='previous_time_work'>Last Week - "+previous_time+" hrs</p>"
+        info_box.innerHTML ="<h2>"+objData[i]["title"]+"<img class='points' src='./images/icon-ellipsis.svg' alt='icon'></h2>\n<div class='times'><h3 id='today_time_work'>"+current_time+"hrs</h3>\n<p id='previous_time_work'>Last Week - "+previous_time+" hrs</p></div>"
         backgroundBox.appendChild(info_box)
     }
 }
