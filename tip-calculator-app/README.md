@@ -15,8 +15,8 @@ Users should be able to:
 
 ### Screenshot
 
-[mobile](./tip-calculator-app/screencapture-mobile.png)
-[descktop](./tip-calculator-app/screencapture.png)
+[mobile](./screencapture-mobile.png)
+[descktop](./screencapture.png)
 
 ### Links
 
