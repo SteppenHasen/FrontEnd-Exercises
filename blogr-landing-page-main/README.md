@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Solution URL](https://steppenhasen.github.io/FrontEnd-Exercises/blogr-landing-page-main/index.html)
-- Live Site URL: [Live Site URL](https://github.com/SteppenHasen/FrontEnd-Exercises/tree/main/blogr-landing-page-main)
+- Solution URL: [Solution URL](https://github.com/SteppenHasen/FrontEnd-Exercises/tree/main/blogr-landing-page-main)
+- Live Site URL: [Live Site URL](https://steppenhasen.github.io/FrontEnd-Exercises/blogr-landing-page-main/index.html)
 
 ## My process
 It was already a familiar process of writing a landing page. I worked with flexbox, deciding not to load the page. Also this time I used more javascript instead of css events.
