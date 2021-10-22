@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    background-color: #fff;
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 16px;
+}
+p, h1, h2,h3, h4 {margin: 0;}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    color: #F0F0F0;
+    background-image: url(../img/apples.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+.logo {
+    font-size: 1.25rem;
+    margin: 0;
+}
+ul {margin: 0;}
+ul li {
+    display: inline;
+    list-style-type: none;
+    margin-left: 60px;
+}
+li a {
+    text-decoration: none;
+    color: #F0F0F0;
+    font-size: 1.15rem;
+}
+.header_heading {
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1 {
+    color: #fff;
+    font-size: 3.1rem;
+    font-weight: 400;
+}
+h1 span {font-size: 6rem;}
+.header_heading p {
+    font-size: 0.8rem;
+}
+header button {margin-top: 20vh;}
+button {
+    color: #fff;
+    background-color: rgb(0, 0, 0, 0.5);
+    border: #fff solid 2px;
+    width: 200px;
+    height: 45px;
+}
+
+article {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.top-text {
+    padding: 50px;
+    height: 50vh;
+    color: #343638;
+}
+h2 {
+    width: 45%;
+    font-weight: 400;
+}
+.top-text p{
+    width: 45%;
+}
+
+section {
+    padding: 50px; 
+    color: #343638;
+}
+.articles {
+    background-color: #F3F3F3;
+}
+h3 {
+    margin-top: 20vh;
+    margin-bottom: 10vh;
+    margin-left: 30%;
+    font-size: 2rem;
+    width: 45%;
+    font-weight: 400;
+}
+
+.main-text {margin-top: 20px;}
+.main-text p {
+    width: 30%;
+    text-align: center;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+.image {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 60%;
+    height: 50vh;
+    box-shadow: inset 0 0 50px 5px rgb(0 0 0 / 50%);
+}
+.image.left {
+    background-image: url(../img/sample.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image.right {
+    background-image: url(../img/sample1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.image button {
+    width: 50px;
+    height: 30px;
+    margin: 20px;
+    align-self: self-end;
+}
+.image p {
+    color: #F0F0F0;
+    margin: 20px;
+    align-self: self-start;
+    text-align: start;
+}
+
+.section-banner {
+    height: 20vh;
+    background-color: #fff;
+    margin-top: 60px;
+    font-size: 1.5rem;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.section-banner input {
+    margin-left: 10px;
+    height: 55px;
+    width: 51vw;
+    border: #343638 2px solid;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: #343638;
+    background-color: #F3F3F3;
+}
+.section-banner button {
+    margin-left: -1px;
+    background-color: #343638;
+    font-size: 1.2rem;
+    border: 0;
+    height: 61px;
+}
+
+footer {
+    width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-footer {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-top: 130px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #9E9E9E;
+    font-size: 1rem;
+}
+.section-foot {
+    width: 22%;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+h4 {
+    color: #343638;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+.main-footer p {
+    line-height: 1.5;
+}
+.time-tweet {color: #cfcfcf;}
+
+.email-input {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.email-input input {
+    height: 40px;
+    width: 70%;
+    border: #343638 2px solid;
+    padding-left: 10px;
+    font-size: 1rem;
+    color: #343638;
+    background-color: #F3F3F3;
+}
+.email-input button {
+    width: 30%;
+    margin-left: -1px;
+    background-color: #343638;
+    font-size: 1rem;
+    border: 0;
+    height: 46px;
+}
+
+footer nav {
+    margin-left: 50px;
+    margin-right: 50px;
+    border-top: #9E9E9E 2px solid;
+    padding: 20px 0 20px 0;
+}
+footer a {
+    text-decoration: none;
+    color: #343638;
+    font-size: 1.15rem;
+}
+.copyright {
+    color: #9E9E9E;
+    font-size: 1.2rem;
+}
