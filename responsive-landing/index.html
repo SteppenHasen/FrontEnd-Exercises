@@ -1,202 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" 
+    integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" 
+    crossorigin="anonymous"
+    />
+<link rel="stylesheet" href="./css/styles.css">
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-  <title>Bootstrap-Responsive</title>
+  <title>Responsive</title>
 </head>
 <body>
-  <div class="container-fluid p-0">
-    <div class="">
-      <nav class="navbar navbar-white bg-white px-d">
-        <a class="navbar-brand text-dark" href="#">Games</a>
-        <div class="d-none d-lg-block d-xl-block">
-            <div class="d-inline-flex">
-                <a class="nav-link active text-gray" href="#">Home</a>
-                <a class="nav-link text-gray" href="#">Features</a>
-                <a class="nav-link text-gray" href="#">Pricing</a>
-                <a class="nav-link disabled text-gray" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </div>
+  <header>
+    <nav>
+      <img class="logo" src="./img/logo.png" alt="logo">
+      <ul class="main_manu">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#pricing">PRICING</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="page_head" id="home">
+      <div class="heading-text">
+        <h1>Proffesional Developers Health Care</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</p>
+      </div>
+      <div class="heading-buttons">
+        <button><i class="fas fa-heartbeat"></i></button>
+        <button><i class="fas fa-first-aid"></i></button>
+        <button><i class="fas fa-stethoscope"></i></button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="tools">
+        <img src="./img/tools.png" alt="Medical-tools">
+      </div>
+      <div class="about_text">
+        <button class="scroll-top"><i class="fas fa-long-arrow-alt-up"></i></button>
+        <h2>About Clinic</h2>
+        <h3>PROFESSIONAL CARE</h3>
+        <ul class="about_list">
+          <li>
+            <h4><span class="arrow-list">&#8658;</span> Consulting</h4>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis 
+              dis parturient montes, nascetur ridiculus mus. Donec 
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </li>
+          <li>
+            <h4><span class="arrow-list">&#8658;</span> Laboratory analysis</h4>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis 
+              dis parturient montes, nascetur ridiculus mus. Donec 
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </li>
+          <li>
+            <h4><span class="arrow-list">&#8658;</span> Diagnostics</h4>
+            <p>Aenean massa. Cum sociis natoque penatibus et magnis 
+              dis parturient montes, nascetur ridiculus mus. Donec 
+              quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <section id="services">
+      <h2>How we can help you</h2>
+      <h3>READ MORE ABOUT OUR SERVICES</h3>
+      <div class="services_cards">
+        <div class="card card1">
+          <img src="./img/icons/oftalmology.jpg" alt="services">
+          <h4>Ophthalmology</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </div>
-        <button class="btn btn-outline-success br-0 bg-black text-white my-2 my-sm-0 d-none d-lg-block d-xl-block">Push To Start</button>
-
-        <nav class="d-lg-none d-xl-none d-block navbar navbar-light bg-white">
-          <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-          </div>
-        </nav>
-      </nav>
-      <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-white d-flex flex-column flex-md-row justify-content-center align-items-center">
-          <a class="nav-link active text-gray" href="#">Home</a>
-          <a class="nav-link text-gray" href="#">Features</a>
-          <a class="nav-link text-gray" href="#">Pricing</a>
-          <a class="nav-link disabled text-gray" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        <div class="card card2">
+          <img src="./img/icons/dentistry.jpg" alt="services">
+          <h4>Dentisty</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+        <div class="card card3">
+          <img src="./img/icons/cardiology.jpg" alt="services">
+          <h4>Cardiology</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+        <div class="card card4">
+          <img src="./img/icons/pediatrics.jpg" alt="services">
+          <h4>Pediatrics</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+        <div class="card card5">
+          <img src="./img/icons/laboratory.jpg" alt="services">
+          <h4>Laboratory</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+        </div>
+        <div class="card card6">
+          <img src="./img/icons/radiology.jpg" alt="services">
+          <h4>Radiology</h4>
+          <p>Nulla consequat massa quis enim. Donec pede justo, 
+            fringilla vel, aliquet nec, vulputate eget, arcu.</p>
         </div>
       </div>
-  </div>
-
-    <div class="d-flex flex-lg-row flex-xl-row flex-column-reverse px-d py-5">
-        <div class="d-flex flex-column justify-content-center p-5">
-            <h1 class="pb-2 text-lg-start text-xl-start text-center">Front-End Lab CSS-Methodologies</h1>
-            <p class="text-lg-start text-xl-start text-center text-gray">Duis aute irure dolor in reprehenderit 
-                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
-                sint occaecat cupidatat non proident, sunt in culpa qui officia 
-                deserunt mollit anim id est laborum.</p>
-            <button type="button" class="align-self-center align-self-lg-start align-self-xl-start btn btn-primary bg-coral btn-width-custom">Find Out More</button>
+    </section>
+    <section id="pricing">
+      <h2>Our Special Offers</h2>
+      <h3>START TO BE HEALTHY TODAY</h3>
+      <div class="pricing">
+        <div class="side price">
+          <span class="heading">Allergy Check</span>
+          <span class="price-text">$ 255</span>
+          <span class="treatments">10 treatments</span>
+          <span class="small">Allergy Test</span>
+          <span class="small">Consultation</span>
+          <span class="small">Treatments</span>
+          <span class="small">10 Procedures</span>
+          <span class="small"><i class="fas fa-times"></i></span>
+          <span class="small">Test Results</span>
+          <button class="get_now">Get Now</button>
         </div>
-        <div class="">
-            <img class="img-fluid" src="./assets/hero-5.jpg" alt="main-image">
+        <div class="center price">
+          <span class="heading">Eye Checkup</span>
+          <span class="price-text">$ 108</span>
+          <span class="treatments">3 treatments</span>
+          <span class="small">Allergy Test</span>
+          <span class="small">Consultation</span>
+          <span class="small">Treatments</span>
+          <span class="small">10 Procedures</span>
+          <span class="small"><i class="fas fa-times"></i></span>
+          <span class="small">Test Results</span>
+          <button class="get_now">Get Now</button>
         </div>
-    </div>
-
-    <div class="px-d py-5 bg-gray text-white">
-        <h2 class="text-center">Games Section</h2>
-        <p class="text-center pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-    
-        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/1.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card1">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/2.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card2">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/3.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card3">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/4.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card4">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/5.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card5">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/6.jpg" class="card-img-top bg-gray shadow-custom rounded" alt="card6">
-                    <div class="card-body bg-gray">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
+        <div class="side price">
+          <span class="heading">Dental Care</span>
+          <span class="price-text">$ 320</span>
+          <span class="treatments">6 treatments</span>
+          <span class="small">Allergy Test</span>
+          <span class="small">Consultation</span>
+          <span class="small">Treatments</span>
+          <span class="small">10 Procedures</span>
+          <span class="small">Oral Hygiene</span>
+          <span class="small">Test Results</span>
+          <button class="get_now">Get Now</button>
         </div>
-    </div>
-    
-    <div class="px-d py-5">
-        <h2 class="text-center">Games Section</h2>
-        <p class="text-center pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-    
-        <div class="row row-cols-1 row-cols-md-2">
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/7.jpg" class="card-img-top shadow-custom rounded" alt="card7">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/8.jpg" class="card-img-top shadow-custom rounded" alt="card8">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/9.jpg" class="card-img-top shadow-custom rounded" alt="card9">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/10.jpg" class="card-img-top shadow-custom rounded" alt="card10">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card no-border mb-4 no-border">
-                    <img src="./assets/card/11.jpg" class="card-img-top shadow-custom rounded" alt="card11">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-gray text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-            <div class="col">
-                <div class="card mb-4 no-border">
-                    <img src="./assets/card/12.jpg" class="card-img-top shadow-custom rounded" alt="card12">
-                    <div class="card-body">
-                      <h5 class="card-title text-center">Card title</h5>
-                      <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-                    </div>
-                  </div>
-            </div>
-        </div> 
-    </div>
-
-    <div class="px-d py-5 bg-gray text-white">
-        <div class="row row-cols-1 row-cols-md-1 row-cols-lg-2">
-            <div class="col">
-                <h3 class="text-start">Subscribe</h3>
-                <p class="text-start pb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
-            </div>
-            <form class="col">
-                <input type="text" class="form-control mb-2" id="formEmail" placeholder="Email Adress">
-                <button type="button" class="btn btn-secondary btn-block bg-coral">Subscribe</button>
-            </form>
-        </div>
-    </div>
-
-    <div class="px-d pb-4 bg-gray text-white">
-        <h4 class="text-center">Copyright &copy; 2021 EPAM</h4>
-    </div>
-  </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact_image">
+      </div>
+      <div class="contact_form">
+        <h2>Make An Appointment</h2>
+        <h3>AND WE WILL CONTACT YOU</h3>
+        <form>
+          <input type="text" placeholder="Full Name">
+          <input type="text" placeholder="Email">
+          <input type="text" placeholder="Phone">
+          <input class="date" type="date">
+          <input list="services_list" placeholder="Subject">
+          <datalist id="services_list">
+            <option>Ophthalmology</option>
+            <option>Dentisty</option>
+            <option>Cardiology</option>
+            <option>Pediatrics</option>
+            <option>Laboratory</option>
+            <option>Radiology</option>
+          </datalist>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <h3>Copyright &copy; 2021 EPAM</h3>
+  </footer>
 </body>
+</html>
