@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@200;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Resume project</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <!-- Left Half -->
+            <div class="col-xl-6 d-none d-xl-block">
+
+                <!-- Logo -->
+                <div class="row greating">
+                    <img src="./img/Logo.png" class="logo">
+                </div>
+
+                <!-- Hello Square -->
+                <div class="container greating">
+                    <div class="row">
+                        <div class="col">
+                            <h1>Hi Stranger!</h1>
+                            <p>Welcome to my test project!</p>
+                            <h3>Lets start using The Dogs API</h3>
+                        </div>
+                    </div>
+
+                    <!-- Selection zone -->
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="votingpic">
+                                <img src="./img/notepaper.png" class="votingimg">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="dogpic">
+                                <img src="./img/dog.png" class="dogimg">
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="gallerypic">
+                                <img src="./img/voting.png" class="galleryimg">
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <div class="col-4">
+                            <a class="btn btn-default left-side-button" href="./voting.html" role="button">VOTING</a> 
+                        </div>
+                        <div class="col-4">
+                            <a class="btn btn-default left-side-button" href="./breeds.html" role="button">BREEDS</a>
+                        </div>
+                        <div class="col-4">
+                            <a class="btn btn-default left-side-button active" href="./gallery.html" role="button" aria-pressed="true">GALLERY</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Right Half -->
+            <div class="col-12 col-xl-6">
+
+                <div class="row search justify-content-center">
+                    <div class="col-md-8 col-sm-10">
+                        <div class="search_area">
+                            <form class="form-inline">
+                                <input class="form-control" type="search" placeholder="Search for breeds by name" aria-label="Search">
+                                <button class="btn btn-small btn-default" type="submit">
+                                    <img src="./img/Search.png" class="btnpicsearch buttonpicture">
+                                    <img src="./img/search-white-20.png" class="btnpicsearch on_action_button_picture">
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-none d-sm-none d-md-block">
+                        <button class="btn btn-like btn-default" role="button" href='./liked.html'>
+                            <img src="./img/happiness.png" class="buttonpicture">
+                            <img src="./img/like-white-30.png" class="on_action_button_picture">
+                        </button>
+                        <button class="btn btn-like btn-default" role="button" href='./faworite.html'>
+                            <img src="./img/like.png" class="buttonpicture">
+                            <img src="./img/fav-white-30.png" class="on_action_button_picture">
+                        </button>
+                        <button class="btn btn-like btn-default" role="button" href='./disliked.html'>
+                            <img src="./img/sadness.png" class="buttonpicture">
+                            <img src="./img/dislike-white-30.png" class="on_action_button_picture">
+                        </button>
+                    </div> 
+                </div>
+
+                <div class="container grid_breeds">
+                    <div class="row menu">
+                        <div class="btn btn-small" type="button">
+                            <img src="./img/back.png" class="buttonpicture">
+                            <img src="./img/back-white-20.png" class="on_action_button_picture">
+                        </div>
+                        <div class="btn breeds-brand d-none d-md-block"><span>BREEDS</span></div>
+                        <div class="btn btn-upload d-none d-md-block" data-toggle="modal" data-target="#uploadModal"><img src="./img/upload-16.png"><span>UPLOAD</span></div>
+                    </div>
+                    <div class="filter_settings">
+                        <div class="row">
+                            <div class="col filter_option">
+                                <p>ORDER</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle drop-filter" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random<span></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Random</a>
+                                    <a class="dropdown-item" href="#">Desc</a>
+                                    <a class="dropdown-item" href="#">Asc</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col filter_option">
+                                <p>TYPE</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle drop-filter" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Static<span></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">All</a>
+                                    <a class="dropdown-item" href="#">Static</a>
+                                    <a class="dropdown-item" href="#">Animated</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col filter_option">
+                                <p>BREED</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle drop-filter" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Random<span></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Random</a>
+                                    <a class="dropdown-item" href="#">Desc</a>
+                                    <a class="dropdown-item" href="#">Asc</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col filter_option">
+                                <p>ORDER</p>
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle drop-filter_limit" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    LIMIT<span></span>
+                                    </button>
+                                    <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">5 items per page</a>
+                                    <a class="dropdown-item" href="#">10 items per page</a>
+                                    <a class="dropdown-item" href="#">15 items per page</a>
+                                    <a class="dropdown-item" href="#">20 items per page</a>
+                                    </div>
+                                    <div class="btn refresh_btn"><img src="./img/update-20.png"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row breed-set">
+                        <div class="col-md-4 col-sm-4">
+                            <div class="row">
+                                <div class="col-md d-none d-sm-block square_one square"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-m d-none d-sm-none d-md-block square_two square"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-8">
+                            <div class="row">
+                                <div class="col col-md-6 d-sm-none d-md-block square_three square"></div>
+                                <div class="col col-md-6 d-sm-none d-md-block square_four square"></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md square_five square"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <modal id="uploadModal" class="modal fade" role="dialog" tabindex="-1" aria-labelledby="uploadModal" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                          
+                        </div>
+                      </div>
+                </modal>
+
+            </div>            
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
